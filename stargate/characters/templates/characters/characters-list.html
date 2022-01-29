@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'characters/characters-list.css' %}">
+{% endblock %}
+
+{% block title %}
+Les personnages de Stargate-SG-1
+{% endblock %}
+
+{% block content %}
+
+<section >
+    <h2>Les personnages de Stargate SG-1</h2>
+    <ul>
+        {% include "characters/includes/card.html" %}
+        {% include "characters/includes/card.html" %}
+        {% include "characters/includes/card.html" %}
+        {% include "characters/includes/card.html" %}
+    </ul>
+</section>
+
+{% endblock %}

@@ -17,7 +17,11 @@ Stargate SG-1
 </section>
 
 <section >
-    {% include "characters/includes/card-theme.html" %}
+    <article class="card-theme" >
+        <h2>Les personnages</h2>
+        <p>Présentation du contenu des personnages</p>
+        <a href="{% url 'characters-list-page' %}"><div>Découvrir la liste des personnages</div></a>
+    </article>
 </section>
 
 {% endblock %}

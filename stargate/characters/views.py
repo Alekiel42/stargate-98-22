@@ -8,8 +8,8 @@ def homepage(request):
 
 
 def characters(request):
-    pass
+    return render(request, 'characters/characters-list.html')
 
 
 def characters_details(request):
-    pass
+    return render(request, 'characters/character-details.html')
