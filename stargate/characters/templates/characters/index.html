@@ -1,9 +1,23 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'characters/index.css' %}">
+{% endblock %}
 
 {% block title %}
 Stargate SG-1
 {% endblock %}
 
 {% block content %}
-<h1>coucou</h1>
+
+<section>
+    <h2>Mon premier site... 24 ans après</h2>
+    <p>ndekzjhd jekfzhlezjkfhzhez jh</p>
+</section>
+
+<section >
+    {% include "characters/includes/card-theme.html" %}
+</section>
+
 {% endblock %}

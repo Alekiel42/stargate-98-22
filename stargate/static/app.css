@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Quattrocento+Sans');
+
+
+html {
+    font-family: 'Quattrocento Sans', sans-serif;
+    background-color: rgb(43, 43, 43);
+    color: rgb(170, 170, 170);
+}
+
 body {
-    color: red;
+    margin: 0;
+}
+
+header {
+    background-color: rgb(0, 6, 63);
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color:rgb(170, 170, 170)
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
 }
