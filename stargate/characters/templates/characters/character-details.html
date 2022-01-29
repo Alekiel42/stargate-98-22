@@ -1,1 +1,24 @@
-<p>chara details</p>
+{% extends "base.html" %}
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'characters/characters-details.css' %}">
+{% endblock %}
+
+{% block title %}
+    Jack O'Neill
+{% endblock %}
+
+{% block content %}
+
+<section id="summary" >
+    <h2>Jack O'Neill</h2>
+    <img src="{% static 'characters/images/jack.jpg' %}" alt="photo" />
+    <p>c'est lui</p>
+</section>
+
+<main>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, consequuntur modi. Debitis accusamus sit id. Cum consequatur ullam reiciendis laboriosam, eius illum iure quia, inventore tempore accusamus accusantium reprehenderit necessitatibus deserunt dolore! Quidem ipsa rerum consectetur temporibus dolor doloribus, officiis est eligendi reiciendis accusantium sed mollitia esse nam suscipit aperiam maxime placeat illum vel aliquid? Inventore enim, officia, doloremque minus itaque commodi, incidunt dolorum tempora libero possimus assumenda eveniet asperiores.</p>
+</main>
+
+{% endblock %}

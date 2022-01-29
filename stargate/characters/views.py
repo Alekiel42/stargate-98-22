@@ -11,5 +11,5 @@ def characters(request):
     return render(request, 'characters/characters-list.html')
 
 
-def characters_details(request):
+def characters_details(request, slug):
     return render(request, 'characters/character-details.html')
