@@ -1,0 +1,12 @@
+{
+    "python.pythonPath": "/bin/python3.9",
+    "window.zoomLevel": 0,
+    "python.languageServer": "Pylance",
+    "emmet.showSuggestionsAsSnippets": true,
+    "files.associations": {
+        "**/*.html": "html",
+        "**/templates/**/*.html": "django-html",
+        "**/templates/**/*": "django-txt",
+        "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+    },
+}
