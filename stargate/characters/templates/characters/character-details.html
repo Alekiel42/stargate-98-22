@@ -6,19 +6,19 @@
 {% endblock %}
 
 {% block title %}
-    Jack O'Neill
+    {{ character.name }}
 {% endblock %}
 
 {% block content %}
 
 <section id="summary" >
-    <h2>Jack O'Neill</h2>
-    <img src="{% static 'characters/images/jack.jpg' %}" alt="photo" />
-    <p>c'est lui</p>
+    <h2>{{ character.name }}</h2>
+    <img src="{% static 'characters/images/'|add:character.image %}" alt="photo de {{ character.name }}" />
+    <p>{{ character.excerpt }}</p>
 </section>
 
 <main>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, consequuntur modi. Debitis accusamus sit id. Cum consequatur ullam reiciendis laboriosam, eius illum iure quia, inventore tempore accusamus accusantium reprehenderit necessitatibus deserunt dolore! Quidem ipsa rerum consectetur temporibus dolor doloribus, officiis est eligendi reiciendis accusantium sed mollitia esse nam suscipit aperiam maxime placeat illum vel aliquid? Inventore enim, officia, doloremque minus itaque commodi, incidunt dolorum tempora libero possimus assumenda eveniet asperiores.</p>
+    <p>{{ character.description }}</p>
 </main>
 
 {% endblock %}

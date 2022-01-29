@@ -14,11 +14,16 @@ Les personnages de Stargate-SG-1
 <section >
     <h2>Les personnages de Stargate SG-1</h2>
     <ul>
-        {% include "characters/includes/card.html" %}
-        {% include "characters/includes/card.html" %}
-        {% include "characters/includes/card.html" %}
-        {% include "characters/includes/card.html" %}
+        {% for character in characters %}
+            {% include "characters/includes/card.html"%}
+        {% endfor %}
     </ul>
 </section>
 
+
+{% endblock %}
+
+{% block js_script %}
+    <script src="{% static 'characters/js/card-flip.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'characters/characters-list.css' %}">
 {% endblock %}
