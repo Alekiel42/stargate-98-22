@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Quattrocento+Sans');
 
+:root {
+    --primary: #5900ff;
+    --secondary: #2624a7;
+    --dark: #212121;
+    --light: #b3b3b3;
+  }
 
 html {
     font-family: 'Quattrocento Sans', sans-serif;
-    background-color: rgb(65, 65, 65);
-    color: rgb(170, 170, 170);
+    background-color: var(--dark);
+    color: var(--light);
 }
 
 body {
@@ -12,16 +18,27 @@ body {
 }
 
 header {
-    background-color: rgb(0, 6, 63);
-    display: flex;
-    justify-content: center;
+    background-image: linear-gradient(to right, var(--primary), var(--secondary));
+    padding: 1rem 1rem 0 1rem;
 }
+
 
 a {
     text-decoration: none;
-    color:rgb(170, 170, 170)
+    color: var(--light);
 }
 
 h1 {
     font-family: 'Orbitron', sans-serif;
+}
+
+@media (min-width: 600px) { 
+    header {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .summary {
+        width: 30%;
+    }
 }

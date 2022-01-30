@@ -11,8 +11,13 @@
 </head>
 <body>
     <header id="main-navigation">
-        <img src="" alt="logo Stargate SG-1 1998 - 2022" />
-        <h1><a href="#">Stargate SG-1</a></h1>
+        <img src="{% static 'images/teamSG1.png' %}" alt="logo Stargate SG-1 1998 - 2022" />
+        <section class="summary">
+            <h1><a href="/">Stargate SG-1 - 98-22</a></h1>
+            <p>En 1998, je me passione pour la série Stargate SG-1. J'étais au collège. Je me lance dans la conception de mon tout premier site web, à coup de < table >, de backgrounds kitshes et liens moches.</p>
+            <p>L'heure du retour arrive ! Je devais faire honneur à mon premier site web, en réalisant une version plus actuelle !</p>
+            <button>Découvrir le site de 1998</button>
+        </section>
     </header>
 
     {% block content %}
