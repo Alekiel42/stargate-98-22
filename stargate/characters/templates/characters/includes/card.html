@@ -5,9 +5,9 @@
     <div class="card__inner is-flipped">
       <div class="card__face card__face--front">    
           <div>
-              <h3>Citation</h3>
+              <h3>Citation de {{ character.name }}</h3>
               <p>{{ character.citation }}</p>
-              <a href="{% url 'characters-details-page' character.slug %}">Toutes les infos sur {{ character.name }}</a>
+              <a href="{% url 'characters-details-page' character.slug %}"class="button">Toutes les infos sur {{ character.name }}</a>
           </div>    
       </div>
       <div class="card__face card__face--back">
@@ -16,7 +16,7 @@
             <img
               src="{% static 'characters/images/'|add:character.image %}"
               alt="Photo de {{ character.name }}"
-              class="pp"
+              class="character-picture"
             /> 
             <h2>{{ character.name }}</h2>
           </div>
@@ -24,7 +24,6 @@
             <p>
               {{ character.excerpt }}
             </p>
-            <p>Origine: {{ character.planet }}</p>
           </div>
         </div>
       </div>

@@ -11,14 +11,14 @@
 
 {% block content %}
 
-<section id="summary" >
-    <h2>{{ character.name }}</h2>
-    <img src="{% static 'characters/images/'|add:character.image %}" alt="photo de {{ character.name }}" />
-    <p>{{ character.excerpt }}</p>
+<section id="characters-details" >
+        <img src="{% static 'characters/images/'|add:character.image %}" alt="photo de {{ character.name }}" />
+        <div class="characters-details__text">
+            <h2>{{ character.name }}</h2>
+            <p>{{ character.excerpt }}</p>
+            <p>{{ character.description }}</p>
+        </div>
 </section>
 
-<main>
-    <p>{{ character.description }}</p>
-</main>
 
 {% endblock %}

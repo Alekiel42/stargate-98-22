@@ -17,7 +17,7 @@ body {
     margin: 0;
 }
 
-header {
+#main-navigation {
     background-image: linear-gradient(to right, var(--primary), var(--secondary));
     padding: 1rem 1rem 0 1rem;
 }

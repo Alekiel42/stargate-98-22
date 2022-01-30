@@ -1,0 +1,27 @@
+#characters-details {
+    background-color: black;
+    margin: 1rem 0;
+}
+
+.characters-details__text {
+    margin: 2rem;
+    padding: 2rem;
+}
+
+#characters-details img {
+    width: 100vw;
+    object-fit: cover;
+}
+
+@media (min-width: 600px) { 
+    #characters-details {
+        display: flex;
+        justify-content: left;
+        margin: 1rem 3rem;
+    }
+
+    #characters-details img {
+        width: 500px;
+        object-fit: cover;
+    }
+}
