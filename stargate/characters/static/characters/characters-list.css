@@ -55,10 +55,6 @@ ul {
   box-sizing: border-box;
 }
 
-.card__face--front h2 {
-  color: white;
-  font-size: 32px;
-}
 
 .card__face--back {
   background-color: var(--light);
@@ -72,7 +68,7 @@ ul {
 
 .card__header {
   position: relative;
-  padding: 30px 30px 40px;
+  padding: 20px;
 }
 
 .card__header:after {
@@ -89,7 +85,7 @@ ul {
     var(--secondary) 115%
   );
   z-index: -1;
-  border-radius: 0px 0px 50% 0px;
+  border-radius: 0px 0px 30% 0px;
 }
 
 .character-picture {
@@ -103,11 +99,10 @@ ul {
   object-fit: cover;
 }
 
-.card__header h2 {
+.card__header h3 {
   color: #fff;
   font-size: 32px;
   font-weight: 900;
-  text-transform: uppercase;
   text-align: center;
 }
 

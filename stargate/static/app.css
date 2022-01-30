@@ -7,6 +7,10 @@
     --light: #ebebeb;
   }
 
+h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif;
+}
+
 html {
     font-family: 'Quattrocento Sans', sans-serif;
     background-color: var(--dark);
@@ -20,6 +24,7 @@ body {
 #main-navigation {
     background-image: linear-gradient(to right, var(--primary), var(--secondary));
     padding: 1rem 1rem 0 1rem;
+    margin-bottom: 4rem;
 }
 
 
@@ -39,12 +44,22 @@ a {
 }
 
 h1 {
-    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
 }
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
 
 footer {
     background-image: linear-gradient(to right, var(--primary), var(--secondary));
     padding: 2rem;
+    margin-top: 4rem;
 }
 
 footer div {
