@@ -24,11 +24,8 @@ Ce site présente simplement des informations relatives à la série TV Stargate
 
 ## Screenshots du projet
 
-<img src="./screenshot/dans-ma-valise01.jpg" alt="screenshot dans-ma-valise" width="600"/>
 
-<img src="./screenshot/dans-ma-valise02.jpg" alt="screenshot dans-ma-valise" width="600"/>
-
-<img src="./screenshot/dans-ma-valise03.jpg" alt="screenshot dans-ma-valise" width="600"/>
+<img src="./screenshot/sg1.gif" alt="demo site stargate sg1" width="500"/>
 
 
 ## Stack Technique (prérequis) 
