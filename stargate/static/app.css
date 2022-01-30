@@ -4,7 +4,7 @@
     --primary: #5900ff;
     --secondary: #2624a7;
     --dark: #212121;
-    --light: #b3b3b3;
+    --light: #ebebeb;
   }
 
 html {
@@ -28,8 +28,27 @@ a {
     color: var(--light);
 }
 
+.button {
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    border-radius: 0.2rem;
+    background-color: var(--light);
+    color: var(--primary);
+    font-weight: bold;
+}
+
 h1 {
     font-family: 'Orbitron', sans-serif;
+}
+
+footer {
+    background-image: linear-gradient(to right, var(--primary), var(--secondary));
+    padding: 2rem;
+}
+
+footer div {
+    margin: 1rem;
 }
 
 @media (min-width: 600px) { 
@@ -40,5 +59,16 @@ h1 {
 
     .summary {
         width: 30%;
+    }
+
+ 
+    footer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    footer div {
+        box-sizing: border-box;
+        width: 33%;
     }
 }

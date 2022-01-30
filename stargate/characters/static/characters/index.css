@@ -1,6 +1,18 @@
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .card-theme {
-    background-color: rgb(116, 64, 211);
+    width: 300px;
+    background-color: black;
     margin: 1rem;
     padding: 1rem;
-    border-radius: 1rem;
 }
+
+.presentation {
+    width: 70%;
+    margin: auto;
+}
+

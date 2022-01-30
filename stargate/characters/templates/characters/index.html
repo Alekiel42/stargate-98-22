@@ -11,12 +11,36 @@ Stargate SG-1
 
 {% block content %}
 
-<section >
+<nav>
     <article class="card-theme" >
         <h2>Les personnages</h2>
         <p>Présentation du contenu des personnages</p>
-        <a href="{% url 'characters-list-page' %}"><div>Découvrir la liste des personnages</div></a>
+        <a href="{% url 'characters-list-page' %}" class="button">Tous les personnages</a>
     </article>
+    <article class="card-theme" >
+        <h2>Les planètes</h2>
+        <p>Parce que Stargate SG-1 est une aventure</p>
+        <p>A venir</p>
+    </article>
+    <article class="card-theme" >
+        <h2>Les acteurs</h2>
+        <p>Mais où peut-on les voir ailleurs? </p>
+        <p>A venir</p>
+    </article>
+    <article class="card-theme" >
+        <h2>Les épisodes</h2>
+        <p>Des histoires à travers la galaxie</p>
+        <p>A venir</p>
+    </article>
+</nav>
+<section class="presentation">
+    <p>
+        Au début du commencement, Stargate, la porte des étoiles, le film de Roland Emmerich. Brad Wright et Johnathan Glassner vont crééer la série d'après ce film. Si j'avais adoré le film, hé bien la série m'a davantage séduite. 
+        Stargate SG-1 est diffusé de 1997 à 2002 aux Etats-Unis sur Showtime. En France, la première diffusion a eu lieu le 27 février 1998 sur diverses chaînes.
+    </p>
+    <p>
+        La série est constituée de 214 épisodes répartis sur 10 saison et de deux téléfilms. 
+    </p>
 </section>
 
 {% endblock %}

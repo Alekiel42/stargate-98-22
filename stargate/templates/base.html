@@ -16,7 +16,7 @@
             <h1><a href="/">Stargate SG-1 - 98-22</a></h1>
             <p>En 1998, je me passione pour la série Stargate SG-1. J'étais au collège. Je me lance dans la conception de mon tout premier site web, à coup de < table >, de backgrounds kitshes et liens moches.</p>
             <p>L'heure du retour arrive ! Je devais faire honneur à mon premier site web, en réalisant une version plus actuelle !</p>
-            <button>Découvrir le site de 1998</button>
+            {% include "includes/button.html" with text="Découvrez le site de 1998" url="http://alex.derson.free.fr/" %}
         </section>
     </header>
 
@@ -25,5 +25,23 @@
 
     {% block js_script %}
     {% endblock %}
+
+    <footer>
+        <div>
+            <h3>C'est quoi ce site ? </h3>
+            <p>Ce site est un projet me servant avant tout d'excercice pour découvrir le framework Django. Il est donc constamment en cours d'évolution. Vous pouvez trouver le code source sur mon github. </p>
+            
+            {% include "includes/button.html" with text="GitHub" url="https://github.com/Alekiel42/stargate-98-22" %}
+        </div>
+        <div>
+            <h3>A propos de moi</h3>
+            <p>Je suis développeuse fullstack. J'ai débuté ma formation avec Javascript pour le frontend et le backend (nodejs). Aujourd'hui je m'ouvre vers une nouvelle technologie assez riche : python et son framework Django. </p>
+            {% include "includes/button.html" with text="Mon portfolio" url="https://alexandrabercoff.com" %}
+        </div>  
+        <div>
+            <h3>Quand tu n'as rien à dire...</h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quis repudiandae vero dolore, non, eveniet error necessitatibus vitae voluptatem consequatur incidunt illo quae provident suscipit, distinctio enim natus autem eaque.
+        </div>
+    </footer>
 </body>
 </html>
